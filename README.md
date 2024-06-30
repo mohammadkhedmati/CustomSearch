@@ -19,8 +19,7 @@
    > your CSE code sample :
 
    ```js
-   <script async src="https://cse.google.com/cse.js?cx=YOUR_SEARCH_ENGINE_ID">
-    </script>
+   <script async src="https://cse.google.com/cse.js?cx=YOUR_SEARCH_ENGINE_ID"></script>
     <div class="gcse-search"></div>
    ```
 
