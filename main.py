@@ -12,9 +12,9 @@ MIN_HEIGHT = 480
 
 def fetch_image_info(query, api_key, search_engine_id, num_images, min_width, min_height):
     image_info_list = []
-    page_limit = num_images // 10
+    page_limit = num_images 
     for start in range(1, page_limit + 1):
-        url = f"https://www.googleapis.com/customsearch/v1?q={query}&searchType=image&start={start * 10 - 9}&num=10&key={api_key}&cx={search_engine_id}"
+        url = f"https://www.googleapis.com/customsearch/v1?q={query}&searchType=image&start={start}&num=10&key={api_key}&cx={search_engine_id}"
         response = requests.get(url).json()
         if 'items' not in response:
             break
